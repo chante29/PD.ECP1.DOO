@@ -14,17 +14,17 @@ public class GestionVehiculosMain {
     */
     
     public void addCocheCategoriaA() {
-    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaA(CategoriaA.LETRA_CATEGORIA));
+    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaA());
     	vehiculos.darAltaVehiculo(this.vehiculo);
        // this.vehiculo = (Vehiculo) IO.in.select(alquileres, "Elige un creador");
     }
     public void addCocheCategoriaB() {
-    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaB(CategoriaB.LETRA_CATEGORIA));
+    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaB());
     	vehiculos.darAltaVehiculo(this.vehiculo);
        // this.vehiculo = (Vehiculo) IO.in.select(alquileres, "Elige un creador");
     }
     public void addCocheCategoriaC() {
-    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaC(CategoriaC.LETRA_CATEGORIA));
+    	this.vehiculo = new Coche(vehiculos.proximoId(), IO.in.readString("Descripcion"),new CategoriaC());
     	vehiculos.darAltaVehiculo(this.vehiculo);
     	// this.vehiculo = (Vehiculo) IO.in.select(alquileres, "Elige un creador");
     }

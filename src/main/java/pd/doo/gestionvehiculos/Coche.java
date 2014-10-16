@@ -35,7 +35,7 @@ public class Coche extends VehiculosAlquilerSegunNumDia{
 		}else if(numDia > Coche.DIA_MAXIMO_LIMITE_2){
 			precio = this.categoria.darPrecioCategoria() * Coche.PORCENTAJE_PAGAR_LIMITE_3;
 		}else{
-			//Lanzar assert
+			assert false : "dias imposible";
 		}
 		return precio;
 	}

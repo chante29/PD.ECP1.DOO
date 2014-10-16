@@ -26,7 +26,7 @@ public class Bicicleta extends VehiculosAlquilerSegunNumDia {
 		}else if(numDia > Bicicleta.DIA_MAXIMO_LIMITE_1){
 			precio = Bicicleta.PRECIO_LIMITE_2;
 		}else{
-			//Lanzar assert
+			assert false : "dias imposibles";
 		}
 		return precio;
 	}

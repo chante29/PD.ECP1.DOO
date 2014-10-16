@@ -28,7 +28,7 @@ public class Moto extends Vehiculo{
 		}else if(numDias > Moto.DIA_MAXIMO_LIMITE_1){
 			precio = numDias * Moto.PRECIO_LIMITE_2;
 		}else{
-			//Lanzar assert
+			assert false : "dias imposible";
 		}
 		return precio;
 	}
