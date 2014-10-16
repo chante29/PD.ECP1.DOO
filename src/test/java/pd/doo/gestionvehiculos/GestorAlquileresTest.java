@@ -20,8 +20,8 @@ public class GestorAlquileresTest {
     public void ini() {
 		this.gestorAlquileres = new GestorAlquileres();
 		this.cocheCategoriaA = new Coche(1, "CocheA", new CategoriaA(CategoriaA.LETRA_CATEGORIA));
-		this.cocheCategoriaB = new Coche(2, "CocheB", new CategoriaA(CategoriaB.LETRA_CATEGORIA));
-		this.cocheCategoriaC = new Coche(3, "CocheC", new CategoriaA(CategoriaC.LETRA_CATEGORIA));
+		this.cocheCategoriaB = new Coche(2, "CocheB", new CategoriaB(CategoriaB.LETRA_CATEGORIA));
+		this.cocheCategoriaC = new Coche(3, "CocheC", new CategoriaC(CategoriaC.LETRA_CATEGORIA));
 		this.moto = new Moto(4, "moto");
 		this.bicicleta = new Bicicleta(5,"bicicleta");
 	}

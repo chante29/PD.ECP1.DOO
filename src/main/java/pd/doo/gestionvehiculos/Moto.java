@@ -2,6 +2,12 @@ package pd.doo.gestionvehiculos;
 
 public class Moto extends Vehiculo{
 
+	private static final int DIA_MINIMO_LIMITE_1 = 1;
+	private static final int DIA_MAXIMO_LIMITE_1 = 7;
+	private static final int PRECIO_LIMITE_1 = 8;
+	private static final int PRECIO_LIMITE_2 = 7;
+	
+	
 	public Moto(int idVehiculo, String descripcion) {
 		super(idVehiculo, descripcion);
 		// TODO Auto-generated constructor stub
@@ -9,15 +15,22 @@ public class Moto extends Vehiculo{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "\nTipo = "+ this.getClass().getSimpleName() + " \nid vehiculo = " +this.getId() + " \ndescripcion = " + this.getDescripcion();
+		
 	}
 
 
 	@Override
-	public double calcularPrecioDia(int numDia) {
-		// TODO Auto-generated method stub
-		return 0;
+	public double darPrecio(int numDias) {
+		double precio = 0;
+		if(numDias >= Moto.DIA_MINIMO_LIMITE_1 && numDias <= Moto.DIA_MAXIMO_LIMITE_1){
+			precio = numDias * Moto.PRECIO_LIMITE_1;
+		}else if(numDias > Moto.DIA_MAXIMO_LIMITE_1){
+			precio = numDias * Moto.PRECIO_LIMITE_2;
+		}else{
+			//Lanzar assert
+		}
+		return precio;
 	}
 
 }

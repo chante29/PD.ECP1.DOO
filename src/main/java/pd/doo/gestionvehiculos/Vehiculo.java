@@ -5,7 +5,16 @@ public abstract class Vehiculo {
 	private String descripcion;
 	
 	public Vehiculo (int idVehiculo, String descripcion){
-		
+		id = idVehiculo;
+		this.descripcion = descripcion;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getDescripcion() {
+		return descripcion;
 	}
 	
 	public void mostrarVehiculo(){
@@ -15,14 +24,8 @@ public abstract class Vehiculo {
 	@Override
 	public abstract String toString();
 	
-	public double darPrecio(int dias){
-		double precio = 0.0;
-		for(int numDia = 1; numDia <= dias; numDia++){
-			precio += calcularPrecioDia(numDia);
-		}
-		return precio;
-	}
 	
-	public abstract double calcularPrecioDia(int numDia);
+	public abstract double darPrecio(int numDiasTotales);
+
 	
 }
