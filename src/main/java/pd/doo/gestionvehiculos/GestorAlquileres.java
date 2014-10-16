@@ -1,6 +1,7 @@
 package pd.doo.gestionvehiculos;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GestorAlquileres {
 	private ArrayList<Vehiculo> vehiculos;
@@ -26,5 +27,13 @@ public class GestorAlquileres {
 		}
 		
 		return vehiculo;
+	}
+	
+	public Object[] toArray(){
+		return this.vehiculos.toArray();
+	}
+	
+	public int proximoId(){
+		return this.vehiculos.size();
 	}
 }
