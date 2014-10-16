@@ -15,6 +15,14 @@ public abstract class Vehiculo {
 	@Override
 	public abstract String toString();
 	
-	public abstract double darPrecio(int dias);
+	public double darPrecio(int dias){
+		double precio = 0.0;
+		for(int numDia = 1; numDia <= dias; numDia++){
+			precio += calcularPrecioDia(numDia);
+		}
+		return precio;
+	}
+	
+	public abstract double calcularPrecioDia(int numDia);
 	
 }

@@ -13,8 +13,9 @@ public class Coche extends Vehiculo{
 		return null;
 	}
 
+
 	@Override
-	public double darPrecio(int dias) {
+	public double calcularPrecioDia(int numDia) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

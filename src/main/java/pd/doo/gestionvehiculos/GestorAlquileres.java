@@ -16,4 +16,8 @@ public class GestorAlquileres {
 	public double calcularPrecio(int idVehiculo, int dias){
 		return 0.0;
 	}
+	
+	public Vehiculo obtenerVehiculo(int idVehiculo){
+		return null;
+	}
 }
