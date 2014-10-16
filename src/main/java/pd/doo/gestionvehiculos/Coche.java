@@ -1,7 +1,7 @@
 package pd.doo.gestionvehiculos;
 
 public class Coche extends Vehiculo{
-	
+	private Categoria categoria;
 	
 	public Coche(int idVehiculo, String descripcion, Categoria categoria) {
 		super(idVehiculo, descripcion);
