@@ -10,7 +10,6 @@ public class Moto extends Vehiculo{
 	
 	public Moto(String idVehiculo, String descripcion) {
 		super(idVehiculo, descripcion);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

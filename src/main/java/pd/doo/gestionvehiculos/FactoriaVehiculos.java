@@ -58,13 +58,5 @@ public class FactoriaVehiculos {
 	
 	public Object[] toArray(){
 		return this.listaVehiculos.keySet().toArray();
-		/*Object[] arrayVehiculos = new Object [listaVehiculos.size()];
-		int numVehiculo = 0;
-		for(Entry<String, Vehiculo> entry : listaVehiculos.entrySet()) {
-			  String key = entry.getKey();
-			  arrayVehiculos[numVehiculo] = entry.getValue();
-			  numVehiculo++;
-		}
-		return arrayVehiculos;*/
 	}
 }

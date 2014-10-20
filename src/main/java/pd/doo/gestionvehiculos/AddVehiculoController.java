@@ -1,6 +1,5 @@
 package pd.doo.gestionvehiculos;
 
-import upm.jbb.IO;
 
 public class AddVehiculoController {
 	private String id = "";
@@ -40,12 +39,14 @@ public class AddVehiculoController {
 			VehiculoAdd = new Coche(id, descripcion, new CategoriaA());
 		}else if(tipoVehiculo.equals("Coche Categoria B")){
 			VehiculoAdd = new Coche(id, descripcion, new CategoriaB());
-		}if(tipoVehiculo.equals("Coche Categoria C")){
+		}else if(tipoVehiculo.equals("Coche Categoria C")){
 			VehiculoAdd = new Coche(id, descripcion, new CategoriaC());
-		}if(tipoVehiculo.equals("Moto")){
+		}else if(tipoVehiculo.equals("Moto")){
 			VehiculoAdd = new Moto(id, descripcion);
-		}if(tipoVehiculo.equals("Bicicleta")){
+		}else if(tipoVehiculo.equals("Bicicleta")){
 			VehiculoAdd = new Bicicleta(id, descripcion);
+		}else{
+			assert false : "tipo vehiculo imposible";
 		}
 	}
 	
