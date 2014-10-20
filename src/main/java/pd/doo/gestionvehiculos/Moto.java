@@ -8,7 +8,7 @@ public class Moto extends Vehiculo{
 	private static final int PRECIO_LIMITE_2 = 7;
 	
 	
-	public Moto(int idVehiculo, String descripcion) {
+	public Moto(String idVehiculo, String descripcion) {
 		super(idVehiculo, descripcion);
 		// TODO Auto-generated constructor stub
 	}

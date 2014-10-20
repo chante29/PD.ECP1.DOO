@@ -8,7 +8,7 @@ public class Bicicleta extends VehiculosAlquilerSegunNumDia {
 	
 	
 	
-	public Bicicleta(int idVehiculo, String descripcion) {
+	public Bicicleta(String idVehiculo, String descripcion) {
 		super(idVehiculo, descripcion);
 	}
 

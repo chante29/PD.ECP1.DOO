@@ -2,7 +2,7 @@ package pd.doo.gestionvehiculos;
 
 public abstract class VehiculosAlquilerSegunNumDia extends Vehiculo {
 
-	public VehiculosAlquilerSegunNumDia(int idVehiculo, String descripcion) {
+	public VehiculosAlquilerSegunNumDia(String idVehiculo, String descripcion) {
 		super(idVehiculo, descripcion);
 		// TODO Auto-generated constructor stub
 	}

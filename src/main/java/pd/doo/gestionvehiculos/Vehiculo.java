@@ -1,15 +1,15 @@
 package pd.doo.gestionvehiculos;
 
 public abstract class Vehiculo {
-	private int id;
+	private String id;
 	private String descripcion;
 	
-	public Vehiculo (int idVehiculo, String descripcion){
+	public Vehiculo (String idVehiculo, String descripcion){
 		id = idVehiculo;
 		this.descripcion = descripcion;
 	}
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 	

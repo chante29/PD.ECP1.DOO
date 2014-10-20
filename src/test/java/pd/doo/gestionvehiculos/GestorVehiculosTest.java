@@ -7,30 +7,28 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class GestorAlquileresTest {
+public class GestorVehiculosTest {
 
 	private Coche cocheCategoriaA;
 	private Coche cocheCategoriaB;
 	private Coche cocheCategoriaC;
 	private Moto moto;
 	private Bicicleta bicicleta;
-	private GestorAlquileres gestorAlquileres;
 	
 	@Before
     public void ini() {
-		this.gestorAlquileres = new GestorAlquileres();
-		this.cocheCategoriaA = new Coche(1, "CocheA", new CategoriaA());
-		this.cocheCategoriaB = new Coche(2, "CocheB", new CategoriaB());
-		this.cocheCategoriaC = new Coche(3, "CocheC", new CategoriaC());
-		this.moto = new Moto(4, "moto");
-		this.bicicleta = new Bicicleta(5,"bicicleta");
+		this.cocheCategoriaA = new Coche("1111XXX", "CocheA", new CategoriaA());
+		this.cocheCategoriaB = new Coche("2222XXX", "CocheB", new CategoriaB());
+		this.cocheCategoriaC = new Coche("3333XXX", "CocheC", new CategoriaC());
+		this.moto = new Moto("4444XXX", "moto");
+		this.bicicleta = new Bicicleta("5555XXX","bicicleta");
 	}
 	
 	
 	 @Test
 	    public void testDarAltaVehiculo() {
-		 	this.gestorAlquileres.darAltaVehiculo(cocheCategoriaA);
-	        assertSame(this.cocheCategoriaA, this.gestorAlquileres.obtenerVehiculo(1));
+		 	FactoriaVehiculos.getFactory().darAltaVehiculo(cocheCategoriaA);
+	        assertSame(this.cocheCategoriaA, FactoriaVehiculos.getFactory().obtenerVehiculo("1111XXX"));
 	    }
 	 
 	 @Test

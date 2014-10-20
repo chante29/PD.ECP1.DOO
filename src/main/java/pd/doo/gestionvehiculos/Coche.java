@@ -12,7 +12,7 @@ public class Coche extends VehiculosAlquilerSegunNumDia{
 	
 	private Categoria categoria;
 	
-	public Coche(int idVehiculo, String descripcion, Categoria categoria) {
+	public Coche(String idVehiculo, String descripcion, Categoria categoria) {
 		super(idVehiculo, descripcion);
 		this.categoria = categoria;
 	}
